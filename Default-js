@@ -1,0 +1,7 @@
+const button = document.querySelector("#confetti-button");
+const canvas = document.querySelector("#confetti2");
+
+const jsConfetti = new JSConfetti()
+button.addEventListener("click", () => {
+  jsConfetti.addConfetti()
+});
