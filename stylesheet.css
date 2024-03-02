@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8e6e6;
+    position: relative; 
+}
+
+h1 {
+    color: #ff0066; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image {
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.image img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image p {
+    color: #333;
+    font-style: italic;
+}
+
+.image img {
+    border: 5px solid #ff0066; 
+    
+}
+
+.image p {
+    font-size: 18px;
+   
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    width: 150px; /* Adjust width of the ribbon */
+    height: calc(100% + 40px); /* Make the ribbon cover the whole height */
+    background-color: #ff0066; /* Pink */
+    top: -20px; /* Adjust position */
+    z-index: -1; /* Move ribbons behind content */
+    transform: rotate(-45deg); /* Rotate the ribbon */
+}
+
+.container::before {
+    left: -100px; /* Adjust the distance from the left */
+}
+
+.container::after {
+    right: -100px; /* Adjust the distance from the right */
+}
+#confetti-button {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff0066; /* Pink */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#confetti-button:hover {
+    background-color: #e6005c; /* Lighter pink */
+}
