@@ -1,0 +1,218 @@
+ <!DOCTYPE html>
+    <!--lines 1-12 create the header on top of every html page-->
+    <html lang="en">
+        <script>
+            function Opop() {
+                // Show the popup
+                document.getElementById('popup').style.display = 'block';
+            }
+
+            function Cpop() {
+                // Hide the popup
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
+        <script>
+            function scrollToBottom(){
+                // Scroll the page to the bottom
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth' // Add smooth scrolling effect
+                });
+            }
+        </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta https-equiv="X-UA-Compatable" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Orthodente web.css">
+        <!--the title tab gives the name on top of the page-->
+        <title> OrthoDente </title>
+        <link rel="icon" type="image/png" href="./Assets/Images/favicon3-16x16.png">
+
+    </head>
+    <body>
+        <!-- created the header and navigation bar with links --> 
+        <header>  
+            <h1 > 
+                <img id="Logo" src="Firefly_dental_logo_64900-removebg-preview.png"> 
+                OrthoDente
+            </h1>
+            <nav>
+                <ul> 
+                    <li>    <button onclick="scrollToBottom()">About Us!</button>                </li>             </ul>
+            </nav>
+        </header>
+        <section class="benefits">
+            <h1>Join our hard working group of talented Orthodontists and staff today!</h1>
+            <h2>Benefits of Working at Orthodente include:</h2>
+            <ul>
+                <li>Competitive salary</li>
+                <li>Health insurance</li>
+                <li>Flexible working hours</li>
+                <li>Professional development opportunities</li>
+                <li>Retirement benefits and health insurance  </li>
+                <li>Working in a welcoming environment so that you can do what you love!</li>
+                <!-- Add more benefits as needed -->
+            </ul>
+        </section>
+        <section class="job-openings">
+            <h2>Job Openings</h2>
+            <div class="job">
+                
+                <h3>Dental Assistant</h3>
+                <p>We are looking for a skilled individual, ready to learn and thrive in our practice! If you have a background in dentistry, or you are willing to learn in order to continue up our corporate ladder, this job is for you.                </p>
+                <img id="Fdesk" src="Firefly A dental assistant working with the model of the jaw 80909.jpg"
+                width="300" 
+             height="300">
+             <br></br>
+                <button onclick="Opop()">Apply now</button>
+
+                <!-- Popup container -->
+                <div id="popup" class="popup-container">
+            <main>
+                        <section>
+                
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal"></span>
+                                    <form class="modal-content" action="/action_page.php">
+                                        <div class="container">
+                        <h1>Sign Up</h1>
+                                <section class="application-form">
+                                    <h2>Online Job Application</h2>
+                                    <form>
+                                        <p for="Fname">First name:</p>
+                                        <input type="text" id="Fname" name="Fname" required>
+                
+                                        <p for="Lname">Last name:</p>
+                                        <input type="text" id="Lname" name="Lname" required>
+                
+                                        <p for="email">Email:</p>
+                                        <input type="email" id="email" name="email" required>
+                            
+                                        <p for="resume">Resume (PDF or Word):</p>
+                                        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                            
+                                        <p for="cover-letter">Cover Letter:</p>
+                                        <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+                            <br></br>
+                                        <button type="submit">Submit Application</button>
+                                    </form>
+                                </section>
+                    </main>
+                    <button onclick="Cpop()">Close</button>        </div>
+
+            <div class="job">
+                <h3>Front Desk Receptionist</h3>
+                <p>A front desk receptionist is the face of our business. It’s an essential job for our practice, and we need someone especially dependable to be at work consistently. Someone who can communicate effectively, welcome guests to the practice with a smile, and make people feel at ease; while organizing and braving the paperwork. 
+                </p>
+                <img id="Fdesk" src="Firefly a front desk receptionist in a dentist office 59616.jpg"
+                width="300" 
+                height="300"
+                >
+             <br> </br>
+                <button onclick="Opop()">Apply now</button>
+
+                <!-- Popup container -->
+                <div id="popup" class="popup-container">
+            <main>
+                        <section>
+                
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal"></span>
+                                    <form class="modal-content" action="/action_page.php">
+                                        <div class="container">
+                        <h1>Sign Up</h1>
+                                <section class="application-form">
+                                    <h2>Online Job Application</h2>
+                                    <form>
+                                        <p for="Fname">First name:</p>
+                                        <input type="text" id="Fname" name="Fname" required>
+                
+                                        <p for="Lname">Last name:</p>
+                                        <input type="text" id="Lname" name="Lname" required>
+                
+                                        <p for="email">Email:</p>
+                                        <input type="email" id="email" name="email" required>
+                            
+                                        <p for="resume">Resume (PDF or Word):</p>
+                                        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                            
+                                        <p for="cover-letter">Cover Letter:</p>
+                                        <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+                            <br></br>
+                                        <button type="submit">Submit Application</button>
+                                    </form>
+                                </section>
+                    </main>
+                    <button onclick="Cpop()">Close</button>        </div>
+
+            <div class="job">
+                <h3>Dental Hygienist</h3>
+                <p>A dental hygienist is a more experienced employee; providing quality oral care with a caring, positive outlook. A hygienist must have the best needs of the patients always at heart. We are specifically looking for a skilled dental hygienist with lots of experience in dental, and leadership.  </p>
+                <img id="Fdesk" src="Firefly a dental hygienist is working with a patient 87741.jpg"
+                width="300" 
+             height="300">
+             <br></br>
+                <button onclick="Opop()">Apply now</button>
+
+                <!-- Popup container -->
+                <div id="popup" class="popup-container">
+            <main>
+                        <section>
+                
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal"></span>
+                                    <form class="modal-content" action="/action_page.php">
+                                        <div class="container">
+                        <h1>Sign Up</h1>
+                                <section class="application-form">
+                                    <h2>Online Job Application</h2>
+                                    <form>
+                                        <p for="Fname">First name:</p>
+                                        <input type="text" id="Fname" name="Fname" required>
+                
+                                        <p for="Lname">Last name:</p>
+                                        <input type="text" id="Lname" name="Lname" required>
+                
+                                        <p for="email">Email:</p>
+                                        <input type="email" id="email" name="email" required>
+                            
+                                        <p for="resume">Resume (PDF or Word):</p>
+                                        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                            
+                                        <p for="cover-letter">Cover Letter:</p>
+                                        <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+                            <br></br>
+                                        <button type="submit">Submit Application</button>
+                                    </form>
+                                </section>
+                    </main>
+                    <button onclick="Cpop()">Close</button>        </div>
+        </section>
+    </body>
+    </section>
+    <h2 id="About-Us">About OrthoDente</h2>
+    <div class="About-OrthoDente-Row">
+        <h3 id="About-OrthoDente-text"> OrthoDente is a small practice, dedicated to service, safety, and smiles. We are a diverse program, run by incredible business managers and staff. Our patients have been delighted by the results, and enjoy coming to our practice because of our welcoming, kind environment. We hold the high standards for our practice, management, and employees to guarantee the best for our customers!
+        </p>
+        <img id="Business" src="image (2).png"
+        width="400" 
+     height="400"
+    }
+     >
+    </div>
+    <section> 
+        <footer id="footer">
+            <h3 id="useful-links"> Credits</h2>
+            <div class="use-links">
+            </div>
+            Credits:
+            Website Developer: Payton Robbins, Seha Uysal, Ameen Abdul-Jawad
+            Media Sources: Adobe Firefly.
