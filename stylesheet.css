@@ -1,6 +1,6 @@
 /* Apply a background color and set font styles for the entire  page */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Calibri', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -53,6 +53,11 @@ nav a {
   font-size: 15pt;
 }
 
+/* adjusting buttons */
+buttons {
+  text color: white; 
+  background-color: #FF9800;
+    }
 /* Style the job openings section */
 .job-openings {
   padding: 20px;
