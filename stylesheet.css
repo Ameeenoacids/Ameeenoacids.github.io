@@ -1,6 +1,6 @@
 /* Apply a background color and set font styles for the entire page */
 body {
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
 }
@@ -66,12 +66,7 @@ nav a {
   padding: 15px;
   margin-bottom: 20px;
 }
-/* buttons */
-buttons{
-text color: white;
-color: white; 
-background-color: #FF9800; 
-}
+
 /* Style for the popup container */
 .popup-container {
   display: none;
