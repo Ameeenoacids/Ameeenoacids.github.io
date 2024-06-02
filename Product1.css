@@ -1,0 +1,428 @@
+ /* General styles for the entire page */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.6; /* Sets the line height for better readability */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* Container to center content and set max width */
+.container {
+    width: 80%; /* Sets the width of the container to 80% of the viewport */
+    margin: auto; /* Centers the container horizontally */
+    overflow: hidden; /* Hides overflow */
+    position: relative; /* Sets the positioning context for child elements */
+}
+
+/* Header styles */
+header {
+    background: #333; /* Background color for the header */
+    color: #fff; /* Text color */
+    padding-top: 30px; /* Top padding */
+    min-height: 70px; /* Minimum height of the header */
+    border-bottom: #77c green solid 3px; /* Bottom border color */
+}
+header nav a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    font-size: 16px; /* Font size */
+}
+
+header ul {
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes default list style */
+}
+
+header li {
+    display: inline; /* Displays list items horizontally */
+    padding: 0 20px; /* Adds padding around list items */
+}
+
+header nav {
+    float: right; /* Aligns navigation to the right */
+    margin-top: 10px; /* Adds margin at the top */
+}
+
+header h1 {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Removes underline from links */   
+    float: left; /* Aligns header text to the left */
+    margin: 0; /* Removes default margin */
+}
+h1 a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Removes underline from links */   
+    font-size: 32px;
+}
+
+/* Section styles */
+section {
+    padding: 20px 0; /* Adds padding */
+    border-bottom: #ccc 1px solid; /* Bottom border */
+}
+
+/* Product detail section */
+#product-detail {
+    padding: 40px 0; /* Adds padding */
+    background: #f4f4f4; /* Background color */
+    text-align: center; /* Aligns text to center */
+}
+
+/* Styles for the product detail */
+.product-detail {
+    display: flex; /* Displays items in a flex layout */
+    flex-direction: column; /* Aligns items in a column */
+    align-items: center; /* Aligns items to the center */
+    text-align: left; /* Aligns text to the left */
+    background: #fff; /* Background color */
+    border: #ccc 1px solid; /* Border color */
+    border-radius: 10px; /* Border radius */
+    padding: 20px; /* Adds padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds box shadow */
+    max-width: 1000px; /* Sets max width */
+    margin: auto; /* Centers the element horizontally */
+}
+
+/* Product images styles */
+.product-images {
+    display: flex; /* Displays items in a flex layout */
+    justify-content: space-between; /* Distributes space between items */
+    width: 50%; /* Sets width */
+    margin-right: 20px; /* Adds margin */
+}
+
+.product-images img {
+    max-width: 30%; /* Sets max width */
+    border-radius: 10px; /* Border radius */
+}
+
+/* Product info styles */
+.product-info {
+    max-width: 700px; /* Sets max width */
+}
+
+.product-info h2 {
+    font-size: 24px; /* Font size */
+    margin-bottom: 10px; /* Adds margin */
+}
+
+.product-info .price {
+    font-size: 20px; /* Font size */
+    color: #333; /* Text color */
+    margin-bottom: 10px; /* Adds margin */
+}
+
+.product-info .stock-status {
+    font-size: 16px; /* Font size */
+    color: green; /* Text color */
+    margin-bottom: 20px; /* Adds margin */
+}
+
+.product-info .status-dot {
+    height: 10px; /* Height */
+    width: 10px; /* Width */
+    background-color: green; /* Background color */
+    border-radius: 50%; /* Border radius */
+    display: inline-block; /* Displays as inline block */
+    margin-right: 5px; /* Adds margin */
+}
+
+/* Add to cart and buy now button styles */
+.add-to-cart, .buy-now {
+    display: block; /* Displays as block element */
+    width: 100%; /* Sets width to 100% */
+    padding: 15px 0; /* Adds padding */
+    margin-bottom: 10px; /* Adds margin */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Border radius */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-align: center; /* Aligns text to center */
+}
+
+.buy-now {
+    background-color: #4B0082; /* Background color */
+}
+
+/* Payment options styles */
+.payment-options {
+    display: block; /* Displays as block element */
+    margin-bottom: 20px; /* Adds margin */
+    color: #4B0082; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 14px; /* Font size */
+}
+
+/* Description styles */
+.product-info .description {
+    margin-bottom: 20px; /* Adds margin */
+    line-height: 1.6; /* Sets line height */
+}
+
+/* Reviews styles */
+.product-info .reviews {
+    font-size: 14px; /* Font size */
+    color: #555; /* Text color */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .product-detail {
+        flex-direction: row; /* Aligns items in a row */
+        text-align: left; /* Aligns text to the left */
+    }
+    .product-images {
+        max-width: 50%; /* Sets max width */
+    }
+    .product-images img {
+        max-width: 100%; /* Sets max width */
+    }
+    .product-info {
+        max-width: 50%; /* Sets max width */
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Aligns text to the center */
+    padding: 20px; /* Adds padding */
+    background: #333; /* Background color */
+    color: #fff; /* Text color */
+}
+/* Cart-specific styles */
+.sidebar {
+    position: fixed; /* Fixes position */
+    top: 0; /* Positions at the top */
+    right: -300px; /* Offsets from the right side */
+    width: 300px; /* Sets width */
+    height: 100%; /* Sets height to 100% */
+    background: #f4f4f4; /* Background color */
+    z-index: 1000; /* Sets z-index */
+    transition: right 0.3s ease; /* Adds transition effect */
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.5); /* Adds box shadow */
+    padding: 20px; /* Adds padding */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+
+.sidebar.active {
+    right: 0; /* Positions the sidebar to the right when active */
+}
+
+
+.close-btn {
+    position: absolute; /* Fixes position */
+    top: 10px; /* Positions from the top */
+    right: 10px; /* Positions from the right */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Changes cursor to pointer */
+    text-decoration: none; /* Removes underline */
+    color: #000; /* Text color */
+}
+
+.cart-row {
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 10px; /* Adds margin */
+}
+
+
+.cart-item {
+    display: flex; /* Displays items in a flex layout */
+    align-items: center; /* Aligns items vertically */
+}
+
+
+.cart-item img {
+    max-width: 50px; /* Sets max width */
+    border-radius: 10px; /* Border radius */
+    margin-right: 10px; /* Adds margin */
+}
+.cart-quantity {
+    display: flex; /* Display items in a flex layout */
+    align-items: center; /* Align items vertically */
+}
+
+
+.cart-quantity input {
+    width: 40px; /* Set width */
+    text-align: center; /* Align text to center */
+    border: none; /* Remove border */
+    background-color: #f9f9f9; /* Background color */
+    margin: 0 5px; /* Add margin around input */
+    padding: 5px; /* Add padding */
+}
+/* Increment and Decrement Button Styles */
+.increment, .decrement {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Making the button round */
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.increment:hover, .decrement:hover {
+    background-color: #333; /* Darkening the color on hover */
+}
+
+/* Adjust margin and padding as needed */
+.cart-quantity .increment {
+    margin-left: 5px;
+}
+
+.cart-quantity .decrement {
+    margin-right: 5px;
+}
+
+.btn-purchase:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Cart summary styling */
+.cart-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+}
+
+.cart-total-price {
+    font-weight: bold;
+}
+
+.cart-summary p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-purchase {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+/* Review section styles */
+#reviews {
+    padding: 40px 0; /* Adds padding */
+    background: #fff; /* Background color */
+    text-align: center; /* Aligns text to center */
+}
+
+#reviews h2 {
+    font-size: 24px; /* Font size */
+    margin-bottom: 20px; /* Adds margin */
+}
+
+#review-form {
+    margin-bottom: 20px; /* Adds margin */
+}
+
+#review-form textarea, #review-form input[type="text"], #review-form button {
+    width: 100%; /* Sets width to 100% */
+    padding: 10px; /* Adds padding */
+    margin-bottom: 10px; /* Adds margin */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Border radius */
+}
+
+#review-form textarea {
+    resize: vertical; /* Allows vertical resizing */
+    min-height: 100px; /* Sets minimum height */
+}
+
+#review-form button {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+}
+
+#review-list {
+    text-align: left; /* Aligns text to left */
+}
+
+.review-item {
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    padding: 20px 0; /* Adds padding */
+}
+
+.review-item:last-child {
+    border-bottom: none; /* Removes bottom border from last review item */
+}
+
+.review-item p {
+    margin: 0; /* Removes default margin */
+}
+
+.review-item .review-text {
+    font-size: 16px; /* Font size */
+    margin-bottom: 10px; /* Adds margin */
+}
+
+.review-item .review-author {
+    font-style: italic; /* Sets font style to italic */
+    color: #888; /* Text color */
+}
+    .star-rating {
+    margin-bottom: 10px; /* Adds margin */
+    direction: rtl; /* Right-to-left direction */
+}
+
+.star-rating input[type="radio"] {
+    display: none; /* Hides the radio buttons */
+}
+
+.star-rating label {
+    display: inline-block; /* Displays as inline-block */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    color: #ccc; /* Default color for star icons */
+    font-size: 24px; /* Font size for star icons */
+}
+
+.star-rating label:before {
+    content: "\2605"; /* Unicode character for star icon */
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #ffcc00; /* Color for selected star icons */
+}
+
+/* Add this CSS to style the delete button */
+.delete-btn {
+    background-color: #ff4d4d; /* Red background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.delete-btn:hover {
+    background-color: #e60000; /* Darker red background color on hover */
+}

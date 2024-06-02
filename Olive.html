@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Olive Roots</title>
+    <link rel="stylesheet" href="Olive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Palestine Olive Roots</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#Cart" onclick="toggleCart()">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="overlay">
+                <h2>Welcome to Palestine Olive Roots</h2>
+                <p>Experience the rich, authentic taste of Palestinian olive oil, directly sourced from the ancient groves of Palestine.</p>
+            </div>
+            <img src="Abud.jpg" alt="Olive Grove">
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <a href="product1.html" class="product">
+                    <img src="Olive-oil-resized.png" alt="Olive Oil 1">
+                    <h3>Extra Virgin Olive Oil</h3>
+                    <p>Our finest quality, cold-pressed extra virgin olive oil.</p>
+                </a>
+                <a href="Product2.html" class="product">
+                    <img src="olive-oil-2.jpg" alt="Olive Oil 2">
+                    <h3>Organic Olive Oil</h3>
+                    <p>Certified organic and packed with natural goodness.</p>
+                </a>
+                <a href="product3.html" class="product">
+                    <img src="olive-oil-3.jpg" alt="Olive Oil 3">
+                    <h3>Flavored Olive Oil</h3>
+                    <p>Infused with herbs and spices for a unique taste.</p>
+                </a>
+            </div>
+
+            <div class="product-list">
+                <a href="product4.html" class="product">
+                    <img src="olive-oil-4.jpg" alt="Olive Oil 4">
+                    <h3>Herbal Infused Olive Oil</h3>
+                    <p>Blended with aromatic herbs for a delightful flavor.</p>
+                </a>
+                <a href="product5.html" class="product">
+                    <img src="olive-oil-5.jpg" alt="Olive Oil 5">
+                    <h3>Raw Olive Oil</h3>
+                    <p>Unfiltered and pure, retaining all natural nutrients.</p>
+                </a>
+                <a href="product6.html" class="product">
+                    <img src="olive-oil-6.jpg" alt="Olive Oil 6">
+                    <h3>Infused Olive Oil</h3>
+                    <p>Indulge in the richness of our infused olive oil varieties.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+                <ul>
+                    <li>Email: info@palestinianoliveoil.com</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                    <li>Address: 123 Olive Grove St, Palestine</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+        <div id="cart-sidebar" class="sidebar">
+            <a href="#" class="close-btn" onclick="toggleCart()">×</a>
+            <h2>Shopping Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <p>Shipping, taxes, and discount codes calculated at checkout.</p>
+                <button class="btn-purchase">Purchase</button>
+            </div>
+            <script src="cart.js"></script> <!-- External JavaScript file -->
+</body>
+</html>

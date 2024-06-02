@@ -1,0 +1,357 @@
+/* General body styles */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.6; /* Sets the line height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+/* General container class to control width and positioning */
+.container {
+    width: 80%; /* Sets container width to 80% of the viewport */
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Ensures no overflow */
+    position: relative; /* Sets position to relative for positioning child elements */
+}
+
+/* Header styles */
+header {
+    background: #333; /* Sets background color */
+    color: #fff; /* Sets text color */
+    padding-top: 30px; /* Adds padding to the top */
+    min-height: 70px; /* Sets minimum height */
+    border-bottom: #77c green solid 3px; /* Adds a green border at the bottom */
+}
+
+/* Header anchor (link) styles */
+header a {
+    color: #fff; /* Sets text color */
+    text-decoration: none; /* Removes underline from links */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    font-size: 16px; /* Sets font size */
+}
+
+/* Header unordered list styles */
+header ul {
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes list bullets */
+}
+
+/* Header list item styles */
+header li {
+    display: inline; /* Displays list items inline */
+    padding: 0 20px; /* Adds padding to the left and right */
+}
+
+/* Header navigation styles */
+header nav {
+    float: right; /* Floats the nav to the right */
+    margin-top: 10px; /* Adds margin to the top */
+}
+
+/* Header main title styles */
+header h1 {
+    float: left; /* Floats the title to the left */
+    margin: 0; /* Removes default margin */
+}
+
+/* General section styles */
+section {
+    padding-bottom: 20px ; /* Adds padding to top and bottom */
+}
+
+
+/* Home section styles */
+#home {
+    position: relative; /* Sets position to relative */
+    height: 400px; /* Sets fixed height */
+    width: 100%; /* Sets width to 100% of viewport */
+    color: #fff; /* Sets text color */
+    text-align: center; /* Centers text */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+/* Home container styles */
+#home .container {
+    position: relative; /* Sets position to relative */
+    height: 100%; /* Sets height to 100% of parent */
+    width: 100%; /* Sets width to 100% of parent */
+    padding: 0; /* Removes padding */
+}
+
+/* Home image styles */
+#home img {
+    width: 100%; /* Sets width to 100% of parent */
+    height: 100%; /* Sets height to 100% of parent */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    position: absolute; /* Positions absolutely within the parent */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+    z-index: -1; /* Places image behind other elements */
+}
+
+/* Overlay styles for the home section */
+#home .overlay {
+    position: absolute; /* Positions absolutely within the parent */
+    top: 50%; /* Aligns to the vertical center */
+    left: 50%; /* Aligns to the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the overlay using transform */
+    text-align: center; /* Centers text */
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background */
+    padding: 20px; /* Adds padding */
+    border-radius: 10px; /* Rounds the corners */
+}
+.product-list {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space evenly between items */
+}
+
+/* Individual product styles */
+.product {
+    flex: 1; /* Allows items to grow/shrink equally */
+    margin: 0 10px; /* Adds margin to the left and right */ 
+    margin-bottom: 20px;
+    background: #fff; /* Sets background color */
+    padding: 10px; /* Adds padding */
+    text-align: center; /* Centers text */
+    border: #ccc 1px solid; /* Adds a border */
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits the text color */
+    display: block; /* Makes the entire product block clickable */
+    height: 300px;
+}
+
+/* Product image styles */
+.product img {
+    max-width: 100%; /* Ensures image doesn't exceed container width */
+    max-height: 50%;
+}
+/* Contact section styles */
+#contact {
+    background-color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.add-to-cart, .buy-now {
+    display: block; /* Displays as block element */
+    width: 100%; /* Sets width to 100% */
+    padding: 15px 0; /* Adds padding */
+    margin-bottom: 10px; /* Adds margin */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Border radius */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-align: center; /* Aligns text to center */
+}
+
+.buy-now {
+    background-color: #4B0082; /* Background color */
+}
+
+/* Payment options styles */
+.payment-options {
+    display: block; /* Displays as block element */
+    margin-bottom: 20px; /* Adds margin */
+    color: #4B0082; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 14px; /* Font size */
+}
+
+/* Description styles */
+.product-info .description {
+    margin-bottom: 20px; /* Adds margin */
+    line-height: 1.6; /* Sets line height */
+}
+
+/* Reviews styles */
+.product-info .reviews {
+    font-size: 14px; /* Font size */
+    color: #555; /* Text color */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .product-detail {
+        flex-direction: row; /* Aligns items in a row */
+        text-align: left; /* Aligns text to the left */
+    }
+    .product-images {
+        max-width: 50%; /* Sets max width */
+    }
+    .product-images img {
+        max-width: 100%; /* Sets max width */
+    }
+    .product-info {
+        max-width: 50%; /* Sets max width */
+    }
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Aligns text to the center */
+    padding: 20px; /* Adds padding */
+    background: #333; /* Background color */
+    color: #fff; /* Text color */
+}
+/* Cart-specific styles */
+.sidebar {
+    width:300px;
+    color:#000;
+    position: fixed; /* Fixes position */
+    top: 0; /* Positions at the top */
+    right: -300px; /* Offsets from the right side */
+    height: 100%; /* Sets height to 100% */
+    background: #f4f4f4; /* Background color */
+    z-index: 1000; /* Sets z-index */
+    transition: right 0.3s ease; /* Adds transition effect */
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.5); /* Adds box shadow */
+    padding: 20px; /* Adds padding */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+
+.sidebar.active {
+    
+    right: 0; /* Positions the sidebar to the right when active */
+}
+
+
+.close-btn {
+    position: absolute; /* Fixes position */
+    top: 10px; /* Positions from the top */
+    right: 10px; /* Positions from the right */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Changes cursor to pointer */
+    text-decoration: none; /* Removes underline */
+    color: #000; /* Text color */
+}
+
+.cart-row {
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 10px; /* Adds margin */
+}
+
+
+.cart-item {
+    display: flex; /* Displays items in a flex layout */
+    align-items: center; /* Aligns items vertically */
+}
+
+
+.cart-item img {
+    max-width: 50px; /* Sets max width */
+    border-radius: 10px; /* Border radius */
+    margin-right: 10px; /* Adds margin */
+}
+.cart-quantity {
+    display: flex; /* Display items in a flex layout */
+    align-items: center; /* Align items vertically */
+}
+
+
+.cart-quantity input {
+    width: 40px; /* Set width */
+    text-align: center; /* Align text to center */
+    border: none; /* Remove border */
+    background-color: #f9f9f9; /* Background color */
+    margin: 0 5px; /* Add margin around input */
+    padding: 5px; /* Add padding */
+}
+/* Increment and Decrement Button Styles */
+.increment, .decrement {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* Making the button round */
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.increment:hover, .decrement:hover {
+    background-color: #333; /* Darkening the color on hover */
+}
+
+/* Adjust margin and padding as needed */
+.cart-quantity .increment {
+    margin-left: 5px;
+}
+
+.cart-quantity .decrement {
+    margin-right: 5px;
+}
+
+.btn-purchase:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
+
+/* Cart summary styling */
+.cart-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+}
+
+.cart-total-price {
+    font-weight: bold;
+}
+
+.cart-summary p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.btn-purchase {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}

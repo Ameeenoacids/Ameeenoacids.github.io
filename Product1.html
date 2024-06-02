@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Virgin Olive Oil - Palestine Olive Roots</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Common styles -->
+    <link rel="stylesheet" href="Product1.css"> <!-- Product-specific styles -->
+    <link rel="stylesheet" href="cart.css"> <!-- Cart-specific styles -->
+    <link rel="stylesheet" href="reviews.css"> <!-- Review-specific styles -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="Olive.html" class="main-link">Palestine Olive Roots</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="Olive.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#Cart" onclick="toggleCart()">Cart</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="product-detail">
+        <div class="container">
+            <div class="product-detail">
+                <div class="product-images">
+                    <img class="shop-item-image" src="Olive-oil-resized.png" alt="Extra Virgin Olive Oil 1">
+                </div>
+                <div class="product-info">
+                    <h2 class="shop-item-title">Our olive oil</h2>
+                    <p class="price shop-item-price">$63.43</p>
+                    <p class="stock-status"><span class="status-dot"></span> In stock, ready to ship</p>
+                    <button class="add-to-cart shop-item-button">Add to Cart</button>
+                    <p class="description">
+                        Abu Snan's Millstones Olive Oil, cultivated in the hills of Abu Snan, boasts a smooth, zesty, and full-bodied flavor. Passed down through generations, the olives are carefully harvested and processed using ancient millstones, then through a modern steel drum machine. This results in a luxurious oil, marrying tradition with modern finesse. Experience the unique blend of smoothness and zest, followed by a satisfying full-bodied richness—a true reflection of the region's climate and soil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><section id="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div id="review-form">
+                <form id="submit-review-form">
+                    <input type="text" id="review-name" placeholder="Your Name" required>
+                    <textarea id="review-message" placeholder="Your Review" required></textarea>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">  </label>
+                    </div>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+            <div id="review-list"></div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Palestine Olive Roots. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Cart sidebar -->
+    <div id="cart-sidebar" class="sidebar">
+        <a href="#" class="close-btn" onclick="toggleCart()">×</a>
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <p>Shipping, taxes, and discount codes calculated at checkout.</p>
+            <button class="btn-purchase">Purchase</button>
+        </div>
+        <script src="cart.js"></script> <!-- External JavaScript file -->
+    </div>
+    <script src="reviews.js"></script> <!-- External JavaScript file for reviews -->
+</body>
+</html>
